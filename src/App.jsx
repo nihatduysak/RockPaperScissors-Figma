@@ -77,9 +77,7 @@ export default function App() {
                 <div className="userChoice">
                   <h3>Oyuncu : {userChoice}</h3>
                   <img src={choicesImages[userChoice]} alt="User Choice" />
-                  {choiceVisible && result === 'Kazandın!' && (
-                    <img className='circleLeft' src="/images/circle.png" alt="Choice Circle" />
-                  )}
+                  {choiceVisible && result === 'Kazandın!' }
                 </div>
                 <div className="resultAndPlayAgain">
                   <h2>{result}</h2>
@@ -88,9 +86,7 @@ export default function App() {
                 <div className="computerChoice">
                   <h3>Bilgisayar : {computerChoice}</h3>
                   <img src={choicesImages[computerChoice]} alt="Computer Choice" />
-                  {choiceVisible && result === 'Kaybettin!' && (
-                    <img className='circleRight' src="/images/circle.png" alt="Choice Circle" />
-                  )}
+                  {choiceVisible && result === 'Kaybettin!' }
                 </div>
               </div>
             )}
@@ -99,7 +95,6 @@ export default function App() {
           {!choiceVisible && (
             <>
               <div className="triangle">
-                <img src="/images/triangle.svg" alt="" />
               </div>
             </>
           )}
