@@ -1,8 +1,19 @@
-# React + Vite
+# Rock Paper Scissors
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React kullanarak geliştirdiğim klasik taş kağıt makas oyunu artık yayında! Oyun içinde useState hook'unu kullandım ve kurallar sayfasının görünürlüğünü kontrol etmek için false değeriyle başladım. Kullanıcı ve bilgisayarın seçimlerine bağlı olarak sonucu dinamik olarak güncelliyoruz. Ayrıca seçimler arasına ufak animasyonlar ekledim.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proje Linki : https://rock-paper-scissors-figma.vercel.app/ 
+Kaynak Kod : https://github.com/nihatduysak/RockPaperScissors-Figma
+
+## Kurulum
+
+Proje'nin klonunu github'dan indirdikten sonra projeyi (VS Code, WebStorm vb ile) çalıştırın. Ardından terminale "npm install" yazarak ilgili paketleri yükleyin. Paketler yüklendikten sonra "npm run dev" yazdıktan sonra projeyi açabilirsiniz.
+
+## Ekran Görüntüleri
+![Rock Paper Scissors - Choice Screen](/public/ChoiceScreen.png)
+![Rock Paper Scissors - Result Won](/public/images/ResultWon.png)
+![Rock Paper Scissors - Resılt Lose](/public/images/ResultLose.png)
+![Rock Paper Scissors - Result Draw](/public/images/ResultDraw.png)
+![Rock Paper Scissors - Rules Page](/public/images/RulesPage.png)
