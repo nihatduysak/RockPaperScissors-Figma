@@ -64,8 +64,6 @@ export default function App() {
             <div className="firstGroup">
               <img onClick={() => handleClick('Kağıt')} className='paper' src="/images/paper.png" alt="Paper Icon" />
               <img onClick={() => handleClick('Makas')} className='scissors' src="/images/scissors.png" alt="Scissors Icon" />
-            </div>
-            <div className="secondGroup">
               <img onClick={() => handleClick('Taş')} className='rock' src="/images/rock.png" alt="Rock Icon" />
             </div>
           </>
@@ -73,20 +71,22 @@ export default function App() {
         {choiceVisible && (
           <>
             {result && (
-              <div className='resultScore'> 
-                <div className="userChoice">
-                  <h3>Oyuncu : {userChoice}</h3>
-                  <img src={choicesImages[userChoice]} alt="User Choice" />
-                  {choiceVisible && result === 'Kazandın!' }
+              <div className='resultScore'>
+                <div className="choices">
+                  <div className="userChoice">
+                    <h3>Oyuncu : {userChoice}</h3>
+                    <img src={choicesImages[userChoice]} alt="User Choice" />
+                    {choiceVisible && result === 'Kazandın!' }
+                  </div>
+                  <div className="computerChoice">
+                    <h3>Bilgisayar : {computerChoice}</h3>
+                    <img src={choicesImages[computerChoice]} alt="Computer Choice" />
+                    {choiceVisible && result === 'Kaybettin!' }
+                  </div>
                 </div>
                 <div className="resultAndPlayAgain">
                   <h2>{result}</h2>
                   <button onClick={() => setChoiceVisible(false)}>YENİDEN OYNA</button>
-                </div>
-                <div className="computerChoice">
-                  <h3>Bilgisayar : {computerChoice}</h3>
-                  <img src={choicesImages[computerChoice]} alt="Computer Choice" />
-                  {choiceVisible && result === 'Kaybettin!' }
                 </div>
               </div>
             )}
