@@ -12,7 +12,7 @@ Kaynak Kod : https://github.com/nihatduysak/RockPaperScissors-Figma
 Proje'nin klonunu github'dan indirdikten sonra projeyi (VS Code, WebStorm vb ile) çalıştırın. Ardından terminale "npm install" yazarak ilgili paketleri yükleyin. Paketler yüklendikten sonra "npm run dev" yazdıktan sonra projeyi açabilirsiniz.
 
 ## Ekran Görüntüleri
-![Rock Paper Scissors - Choice Screen](/public/ChoiceScreen.png)
+![Rock Paper Scissors - Choice Screen](/public/images/ChoiceScreen.png)
 ![Rock Paper Scissors - Result Won](/public/images/ResultWon.png)
 ![Rock Paper Scissors - Resılt Lose](/public/images/ResultLose.png)
 ![Rock Paper Scissors - Result Draw](/public/images/ResultDraw.png)
